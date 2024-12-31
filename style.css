@@ -1,0 +1,95 @@
+/* Estilo Geral */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    margin: 0;
+    font-size: 2.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo do Menu de Navegação */
+nav {
+    background-color: #333;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul > li {
+    position: relative;
+    margin: 0 15px;
+}
+
+nav ul > li > strong {
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: block;
+    padding: 10px;
+}
+
+nav ul ul {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+    padding: 10px;
+    min-width: 200px;
+    z-index: 100;
+}
+
+nav ul > li:hover ul {
+    display: block;
+}
+
+nav ul ul li {
+    margin: 5px 0;
+}
+
+nav ul ul a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    padding: 5px 10px;
+    display: block;
+    transition: background-color 0.3s;
+    border-radius: 3px;
+}
+
+nav ul ul a:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Estilo para Links */
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #4CAF50;
+}
